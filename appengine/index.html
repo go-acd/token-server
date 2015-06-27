@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Amazon Cloud Drive login for Go.</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Amazon Cloud Drive login for go-acd</h1>
+      <p>
+        This website allows you to download Amazon OAuth credentials
+        (access_token, refresh-token and token_type).
+      </p>
+      <p>
+        When you're ready to proceed, please click on "Download my credentials"
+        below. It will take you to Amazon website and ask you to login with
+        <strong>go-acd</strong>.
+      </p>
+      <p>
+        After you login with Amazon, you'll immediately receive
+        <code>acd-token.json</code> which can be used by <a
+         href="https://github.com/go-acd/acd">go-acd</a> implementers to access
+       your Amazon Cloud Drive account. This website never log, save or in
+       anyway interact with Amazon on your behalf beyond providing you with a
+       token and refreshing that token for you. Please keep the
+       <code>acd-token.json</code> secure.
+      </p>
+      <p>
+        The default location for <code>acd-token.json</code>
+        <ul>
+          <li>Linux: <code>~/.config/acd-token.json</code></li>
+          <li>Mac: <code>~/.config/acd-token.json</code></li>
+        </ul>
+      <p>
+        If you believe your credentials were compromised or you simply no
+        longer wish to be logged in with this service, you may remove the login
+        permission through your Amazon account <a
+          href="https://smile.amazon.com/ap/adam">Amazon.com > Your Account >
+          Manage Login with Amazon</a>.
+      </p>
+      <p>
+      If you are experiencing any issues with this service, please contact <a
+                        href="https://github.com/kalbasit">me</a>.
+      </p>
+      <br><br><br><br><br>
+      <p>
+        <a href="{{.}}" type="button" class="btn btn-lg btn-success btn-block">
+          Download my credentials as acd-token.json
+        </a>
+      </p>
+
+      <!-- Github ribbon -->
+      <a href="https://github.com/go-acd/token-server">
+        <img style="position: absolute; top: 0; right: 0; border: 0;"
+             src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png">
+      </a>
+    </div>
+  </body>
+</html>
